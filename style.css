@@ -1,10 +1,24 @@
 /* CSS File for Signup Form Project */
+@font-face {
+  font-family: 'Regular';
+  src: url('fonts/Comfortaa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Title';
+  src: url('fonts/Norse-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
     margin: 0;
+    padding: 0;
 }
 
 .container {
-    color: purple;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -12,36 +26,48 @@ body {
 
 /* Left Section and its CSS */
 .left-section {
+    font-family: "Title", sans-serif;
     width: 40%;
-    background-color: rgb(209, 244, 255);
+    position: relative;
 }
 
 .bg-img {
-    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .left-container {
-    background-color: rgba(0, 0, 0, 0.25);
-    padding: 48px 0 48px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 32px 0 32px 0;
+    margin-top: 16vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin-top: 16vh;
 }
 
 .logo {
-
+    font-size: 48px;
+    margin-bottom: 8px;
 }
 
 .title {
-
+    font-size: 64px;
 }
 
 /* Right Section and its CSS */
 .right-section {
+    font-family: "Regular", sans-serif;
     width: 70%;
-    background-color: rgb(255, 222, 222);
+    background-color: rgb(255, 205, 205);
     display: flex;
 }
 
@@ -61,22 +87,46 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
 input {
     max-width: 180px;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(110, 110, 255);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+label {
+    max-width: 185px;
+
 }
 
 .form-item {
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
 
 button {
     padding: 10px;
     width: 200px;
     border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+a {
+    text-decoration: none;
 }
