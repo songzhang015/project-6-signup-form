@@ -1,11 +1,10 @@
 /* CSS File for Signup Form Project */
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .container {
     color: purple;
-    font-size: 40px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -13,7 +12,7 @@ body {
 
 /* Left Section and its CSS */
 .left-section {
-    width: 30%;
+    width: 40%;
     background-color: rgb(209, 244, 255);
 }
 
@@ -23,7 +22,7 @@ body {
 
 .left-container {
     background-color: rgba(0, 0, 0, 0.25);
-    padding: 32px 0 32px 0;
+    padding: 48px 0 48px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,4 +42,41 @@ body {
 .right-section {
     width: 70%;
     background-color: rgb(255, 222, 222);
+    display: flex;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 150px 100px;
+}
+
+.header {
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+input {
+    max-width: 180px;
+}
+
+.form-item {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
 }
