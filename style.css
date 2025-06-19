@@ -1,5 +1,46 @@
 /* CSS File for Signup Form Project */
 body {
+  margin: 0;
+}
+
+.container {
     color: purple;
-    font-size: 50px;
+    font-size: 40px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* Left Section and its CSS */
+.left-section {
+    width: 30%;
+    background-color: rgb(209, 244, 255);
+}
+
+.bg-img {
+    
+}
+
+.left-container {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 32px 0 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16vh;
+}
+
+.logo {
+
+}
+
+.title {
+
+}
+
+/* Right Section and its CSS */
+.right-section {
+    width: 70%;
+    background-color: rgb(255, 222, 222);
 }
